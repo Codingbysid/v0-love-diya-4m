@@ -52,7 +52,7 @@ export default function ShrinePage({ setCurrentPage }: ShinePageProps) {
             transition={{ repeat: Number.POSITIVE_INFINITY, duration: 2 }}
           >
             <Image
-              src="/DPZY-165.jpg"
+              src="/DPZY-160.jpg.webp"
               alt="My Goddess"
               fill
               className="object-cover rounded-2xl"
