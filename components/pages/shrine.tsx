@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 interface ShinePageProps {
   setCurrentPage: (page: string) => void
@@ -46,11 +47,17 @@ export default function ShrinePage({ setCurrentPage }: ShinePageProps) {
 
         <div className="relative z-10">
           <motion.div
-            className="w-64 h-64 mx-auto mb-8 rounded-2xl overflow-hidden bg-gradient-to-br from-red-100 via-pink-100 to-rose-100 flex items-center justify-center"
+            className="w-64 h-64 mx-auto mb-8 rounded-2xl overflow-hidden bg-gradient-to-br from-red-100 via-pink-100 to-rose-100 flex items-center justify-center relative"
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ repeat: Number.POSITIVE_INFINITY, duration: 2 }}
           >
-            <span className="text-8xl">👑</span>
+            <Image
+              src="/DPZY-165.jpg"
+              alt="My Goddess"
+              fill
+              className="object-cover rounded-2xl"
+              priority
+            />
           </motion.div>
 
           <motion.h1 className="font-serif text-5xl md:text-6xl font-bold text-red-600 mb-4 glow">My Goddess</motion.h1>
